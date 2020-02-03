@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * See LICENSE.md for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="postdirekt" type="text" sortOrder="600" showInDefault="1" showInStore="0" showInWebsite="1" translate="label">
+            <label>Deutsche Post Direkt</label>
+            <tab>customer</tab>
+            <resource>Magento_Customer::config_customer</resource>
+            <group id="general" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0" translate="label">
+                <label>General Configuration</label>
+                <field id="api_user" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0"
+                        translate="label" type="text">
+                    <label>Api User</label>
+                </field>
+                <field id="api_password" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="0"
+                       translate="label" type="obscure">
+                    <label>Api Password</label>
+                    <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+                </field>
+             </group>
+        </section>
+    </system>
+</config>
