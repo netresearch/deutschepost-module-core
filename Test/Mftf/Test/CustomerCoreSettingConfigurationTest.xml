@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ /**
+  * See LICENSE.md for license details.
+  */
+-->
+<tests xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="urn:magento:mftf:Test/etc/testSchema.xsd">
+    <test name="PostDirektCoreConfigureApiCredentials">
+        <annotations>
+            <features value="Configuration"/>
+            <stories value="PostDirekt Api credentials configuration"/>
+            <title value="PostDirekt Api credentials configuration"/>
+            <description value="Verify that api credentials can be configured"/>
+            <severity value="CRITICAL"/>
+            <group value="postdirekt-configuration"/>
+        </annotations>
+        <before>
+            <actionGroup ref="LoginAsAdmin" stepKey="loginAsAdmin"/>
+            <actionGroup ref="NavigateToCustomerPostdirektSectionActionGroup" stepKey="navigateToCustomerSettingsConfigInTest"/>
+            <actionGroup ref="ScrollToAndExpandGroupActionGroup" stepKey="navigateToShippingCoreGroup">
+                <argument name="groupName" value="{{AdminSystemConfigCustomerPostDirektCoreSection.postdirektCoreGroup}}"/>
+                <argument name="groupNameExpanded" value="{{AdminSystemConfigCustomerPostDirektCoreSection.postdirektCoreGroupExpanded}}"/>
+            </actionGroup>
+        </before>
+        <after>
+            <actionGroup ref="logout" stepKey="logout"/>
+        </after>
+
+        <comment userInput="-> Perform actual test" stepKey="runTestComment"/>
+        <!-- Scroll to subgroup and expand it -->
+        <seeElement selector="{{AdminSystemConfigCustomerPostDirektCoreSection.apiUserGroup}}" stepKey="seeApiUserConfigGroup"/>
+        <fillField stepKey="setApiUsername" selector="{{AdminSystemConfigCustomerPostDirektCoreSection.apiUserGroup}}" userInput="{{PostdirektCoreApiData.username}}" />
+        <seeElement selector="{{AdminSystemConfigCustomerPostDirektCoreSection.apiUserGroup}}" stepKey="seeApiPasswordConfigGroup"/>
+        <fillField stepKey="setApiPassword" selector="{{AdminSystemConfigCustomerPostDirektCoreSection.apiPasswordGroup}}" userInput="{{PostdirektCoreApiData.password}}" />
+        <actionGroup ref="SaveAdminSystemConfigSectionActionGroup" stepKey="saveAdminConfigSection"/>
+    </test>
+</tests>

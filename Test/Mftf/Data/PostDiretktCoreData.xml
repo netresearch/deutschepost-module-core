@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ /**
+  * See LICENSE.md for license details.
+  */
+-->
+<entities xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="urn:magento:mftf:Test/etc/dataProfileSchema.xsd">
+    <entity name="PostdirektCoreApiData" type="postdirektCoreData">
+        <data key="username">Test</data>
+        <data key="password">Password</data>
+    </entity>
+</entities>
