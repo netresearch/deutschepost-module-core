@@ -1,5 +1,5 @@
 {
-    "name": "postdirekt/module-core",
+    "name": "deutschepost/module-core",
     "description": "Deutsche Post Direkt Core Integration for Magento2",
     "version": "1.0.0",
     "type": "magento2-module",
