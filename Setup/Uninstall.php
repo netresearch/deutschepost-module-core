@@ -12,9 +12,6 @@ use Magento\Framework\Setup\UninstallInterface;
 
 /**
  * Class Uninstall
- *
- * @author   Andreas Müller <andreas.mueller@netresearch.de>
- * @link     https://www.netresearch.de/
  */
 class Uninstall implements UninstallInterface
 {

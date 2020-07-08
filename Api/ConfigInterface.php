@@ -10,8 +10,6 @@ namespace PostDirekt\Core\Api;
  * Interface ConfigurationInterface
  *
  * @api
- * @author   Andreas Müller <andreas.mueller@netresearch.de>
- * @link     https://www.netresearch.de/
  */
 interface ConfigInterface
 {

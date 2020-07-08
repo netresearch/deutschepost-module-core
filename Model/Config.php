@@ -14,8 +14,6 @@ use PostDirekt\Core\Api\ConfigInterface;
 /**
  * Class Config
  *
- * @author   Andreas Müller <andreas.mueller@netresearch.de>
- * @link     https://www.netresearch.de/
  */
 class Config implements ConfigInterface
 {
