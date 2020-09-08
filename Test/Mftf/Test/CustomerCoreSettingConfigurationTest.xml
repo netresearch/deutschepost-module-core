@@ -16,7 +16,7 @@
             <group value="postdirekt-configuration"/>
         </annotations>
         <before>
-            <actionGroup ref="LoginAsAdmin" stepKey="loginAsAdmin"/>
+            <actionGroup ref="AdminLoginActionGroup" stepKey="AdminLoginActionGroup"/>
             <actionGroup ref="NavigateToCustomerPostdirektSectionActionGroup" stepKey="navigateToCustomerSettingsConfigInTest"/>
             <actionGroup ref="ScrollToAndExpandGroupActionGroup" stepKey="navigateToShippingCoreGroup">
                 <argument name="groupName" value="{{AdminSystemConfigCustomerPostDirektCoreSection.postdirektCoreGroup}}"/>
@@ -24,7 +24,7 @@
             </actionGroup>
         </before>
         <after>
-            <actionGroup ref="logout" stepKey="logout"/>
+            <actionGroup ref="AdminLogoutActionGroup" stepKey="logout"/>
         </after>
 
         <comment userInput="-> Perform actual test" stepKey="runTestComment"/>
