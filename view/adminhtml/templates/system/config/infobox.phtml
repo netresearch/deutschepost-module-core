@@ -1,0 +1,32 @@
+<?php
+/**
+ * See LICENSE.md for license details.
+ */
+/** @var \Magento\Framework\View\Element\Template $block */
+?>
+<div class="col content">
+    <p>
+        <?= $block->escapeHtml(__('Deutsche Post Direkt is a 100% subsidiary of Deutsche Post DHL Group specializing in dialog marketing, address and data management.')) ?>
+    </p>
+    <p>
+        <?= $block->escapeHtml(__('The postal reference database forms the core of all the services provided by the company. The database, which is managed in accordance with the General Data Protection Regulation (GDPR), is characterised by daily data maintenance and a level of coverage, with over 220 million data records, that makes it unique in Germany. This ensures that the services provided by Deutsche Post Direkt are market-leading in terms of quality.')) ?>
+    </p>
+</div>
+<div class="col side">
+    <aside>
+        <div class="section">
+            <h3><?= $block->escapeHtml(__('Getting Started')) ?></h3>
+            <p>
+                <?= $block->escapeHtml(__('Web service credentials are needed to use the Deutsche Post Direkt services.')) ?>
+            </p>
+            <p>
+                <?php
+                    $localizedUrl = __('https://www.deutschepost.de/en/d/deutsche-post-direkt/kontakt-auswahl.html');
+                    $link = [sprintf('<a href="%s" target="_blank" rel="noopener">', $localizedUrl), '</a>'];
+                ?>
+                <?= /* @noEscape */ __('If you do not have an account yet, please contact Deutsche Post Direkt via %1website%2.', ...$link) ?>
+            </p>
+        </div>
+        <?= $block->getBlockHtml('postdirekt_general_infobox_additional')?>
+    </aside>
+</div>

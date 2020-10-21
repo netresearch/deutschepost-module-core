@@ -17,6 +17,8 @@ use PostDirekt\Core\Api\ConfigInterface;
  */
 class Config implements ConfigInterface
 {
+    private const CONFIG_PATH_VERSION = 'postdirekt/core/version';
+
     /**
      * @var ScopeConfigInterface
      */
@@ -66,5 +68,13 @@ class Config implements ConfigInterface
                 $store
             )
         );
+    }
+
+    /**
+     * @return string
+     */
+    public function getModuleVersion(): string
+    {
+        return $this->scopeConfig->getValue(self::CONFIG_PATH_VERSION);
     }
 }

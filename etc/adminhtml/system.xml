@@ -12,13 +12,21 @@
             <resource>Magento_Customer::config_customer</resource>
             <group id="general" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0" translate="label">
                 <label>General Configuration</label>
+
+                <field id="postdirekt_general_infobox" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <frontend_model>Netresearch\ConfigFields\Block\InfoBox</frontend_model>
+                    <attribute type="body_template">PostDirekt_Core::system/config/infobox.phtml</attribute>
+                    <attribute type="logo">PostDirekt_Core::images/dp_logo.png</attribute>
+                    <attribute type="css_class">postdirekt</attribute>
+                </field>
+
                 <field id="api_user" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0"
                         translate="label" type="text">
-                    <label>Api User</label>
+                    <label>API User</label>
                 </field>
                 <field id="api_password" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="0"
                        translate="label" type="obscure">
-                    <label>Api Password</label>
+                    <label>API Password</label>
                     <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
                 </field>
              </group>
