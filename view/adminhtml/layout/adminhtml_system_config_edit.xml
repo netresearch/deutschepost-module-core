@@ -6,10 +6,16 @@
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <block class="Magento\Backend\Block\Template" name="dhlshipping_paket_infobox_additional" template="PostDirekt_Core::system/config/infobox/dhl_additional.phtml">
-            <arguments>
-                <argument name="view_model" xsi:type="object">PostDirekt\Core\ViewModel\Adminhtml\System\Config\InfoBox\DhlPaketAdditional</argument>
-            </arguments>
-        </block>
+        <!-- anchor for other services' additional information -->
+        <block class="Magento\Backend\Block\Template" name="postdirekt_infobox_additional" template="PostDirekt_Core::system/config/infobox/additional.phtml" />
+
+        <!-- insert our additional information to DHL Paket -->
+        <referenceBlock name="dhlpaket_infobox_additional">
+            <block class="Magento\Backend\Block\Template" name="postdirekt" template="PostDirekt_Core::system/config/infobox/dhlpaket/additional.phtml">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">PostDirekt\Core\ViewModel\Adminhtml\System\Config\InfoBox\Additional</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
     </body>
 </page>
