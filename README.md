@@ -18,5 +18,5 @@ It is not intended to be used standalone.
 
 ## Copyright
 
-(c) 2020 Netresearch DTT GmbH
+(c) 2021 Netresearch DTT GmbH
 
