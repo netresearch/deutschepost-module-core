@@ -6,7 +6,7 @@ It is not intended to be used standalone.
 
 ## Requirements
 
-- PHP >= 7.1.3
+- PHP >= 7.2.0
 
 ## Magento 2 Version Support
 
@@ -18,5 +18,5 @@ It is not intended to be used standalone.
 
 ## Copyright
 
-(c) 2021 Netresearch DTT GmbH
+(c) 2022 Netresearch DTT GmbH
 
