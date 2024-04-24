@@ -6,11 +6,11 @@ It is not intended to be used standalone.
 
 ## Requirements
 
-- PHP >= 7.2.0
+- PHP >= 8.2.0
 
 ## Magento 2 Version Support
 
-- Magento 2.3.0 and newer
+- Magento 2.4.7 and newer
 
 ## License
 
@@ -18,5 +18,4 @@ It is not intended to be used standalone.
 
 ## Copyright
 
-(c) 2022 Netresearch DTT GmbH
-
+(c) 2024 Netresearch DTT GmbH
