@@ -11,10 +11,6 @@ use Magento\Framework\Encryption\EncryptorInterface;
 use Magento\Store\Model\ScopeInterface;
 use PostDirekt\Core\Api\ConfigInterface;
 
-/**
- * Class Config
- *
- */
 class Config implements ConfigInterface
 {
     private const CONFIG_PATH_VERSION = 'postdirekt/core/version';

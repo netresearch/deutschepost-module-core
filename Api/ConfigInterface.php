@@ -13,8 +13,8 @@ namespace PostDirekt\Core\Api;
  */
 interface ConfigInterface
 {
-    const CONFIG_PATH_API_USER = 'postdirekt/general/api_user';
-    const CONFIG_PATH_API_PASSWORD= 'postdirekt/general/api_password';
+    public const CONFIG_PATH_API_USER = 'postdirekt/general/api_user';
+    public const CONFIG_PATH_API_PASSWORD= 'postdirekt/general/api_password';
 
     /**
      * Get the api user

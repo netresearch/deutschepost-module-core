@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Removed
 
 - Support for Magento < 2.4.7
-- PHP7.x support
+- PHP 7 support
 
 ## 1.2.0
 
@@ -43,7 +43,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Removed
 
-- upport for Magento 2.2.
+- support for Magento 2.2.
 
 ## 1.0.0
 
