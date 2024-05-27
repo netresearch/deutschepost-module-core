@@ -10,7 +10,7 @@ It is not intended to be used standalone.
 
 ## Magento 2 Version Support
 
-- Magento 2.4.7 and newer
+- Magento 2.6.x and newer
 
 ## License
 
