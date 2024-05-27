@@ -12,10 +12,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - Compatibility for Magento 2.4.7
 
+### Changed
+
+- Use escaper instead of block in templates
+
 ### Removed
 
-- Support for Magento < 2.4.7
-- PHP 7 support
+- PHP 7.x support
+- PHP 8.1 support
 
 ## 1.2.0
 
