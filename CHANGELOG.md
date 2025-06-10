@@ -6,6 +6,21 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 
+## 1.4.0
+
+### Added
+
+- Compatibility for Magento 2.4.8
+- PHP 8.4 support
+
+### Changed
+
+- Updated minimum Magento framework dependencies
+
+### Removed
+
+- PHP 8.2 support
+
 ## 1.3.0
 
 ### Added
