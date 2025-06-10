@@ -6,11 +6,11 @@ It is not intended to be used standalone.
 
 ## Requirements
 
-- PHP >= 8.2.0
+- PHP >= 8.3.0
 
 ## Magento 2 Version Support
 
-- Magento 2.6.x and newer
+- Magento 2.4.8 and newer
 
 ## License
 
